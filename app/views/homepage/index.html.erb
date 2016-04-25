@@ -1,0 +1,145 @@
+<!--start navbar-->
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color: #9e76b2;"><strong>CMU Dorm</strong></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#" style="color: #9e76b2;">หน้าแรก <span class="sr-only">(current)</span></a></li>
+                <li><a href="new" style="color: #9e76b2;">สำหรับผู้ดูแล</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #9e76b2;">หอพัก <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="infoDormman.html" style="color: #9e76b2;">ข้อมูลหอพัก</a></li>
+                        <li><a href="Reserve.html" style="color: #9e76b2;">ลงทะเบียนจองหอหอพัก</a></li>
+                        <li><a href="ReportDorm.html" style="color: #9e76b2;">รายงานห้องพัก</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#" style="color: #9e76b2;">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="ActivityDorm.html" style="color: #9e76b2;">กิจกรรมหอ</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li style="right: -40px"><%= link_to "Log in", new_login_path%></li>
+                <li style="right: -20px"><%= link_to "|"%></li>
+                <li ><%= link_to "Register", new_register_path, style: "color: #9e76b2" %></li>
+                <!-- <li><a href="Login.html" target="_blank" style76b2;">Log in</a></li> -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<section class="container resize">
+    <!--SlideShow-->
+    <!--end navbar-->
+    <div id="page">
+        <div id="myCarousel" class="carousel slide " data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+                <li data-target="#myCarousel" data-slide-to="8"></li>
+                <li data-target="#myCarousel" data-slide-to="9"></li>
+                <li data-target="#myCarousel" data-slide-to="10"></li>
+                <li data-target="#myCarousel" data-slide-to="11"></li>
+                <li data-target="#myCarousel" data-slide-to="12"></li>
+                <li data-target="#myCarousel" data-slide-to="13"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox" >
+                <div class="item active showimg"  >
+                    <%= image_tag("m1.jpg", :alt => "0") %>
+                </div>
+                <div class="item" >
+                    <%= image_tag("m3.jpg", :alt => "1") %>
+                </div>
+                <div class="item">
+                    <%= image_tag("m4.jpg", :alt => "2") %>
+                </div>
+                <div class="item">
+                    <%= image_tag("m5.jpg", :alt => "3") %>
+                </div>
+                <div class="item">
+                    <%= image_tag("m6.jpg", :alt => "4") %>
+                </div>
+                <div class="item">
+                    <%= image_tag("m7.jpg", :alt => "5") %>
+                </div>
+                <div class="item">
+                    <%= image_tag("f1.jpg", :alt => "6") %>
+                </div>
+                <div class="item">
+                    <%= image_tag("f2.jpg", :alt => "7") %>
+                </div>
+                <div class="item">
+                    <%= image_tag("f3.jpg", :alt => "8") %>
+                </div>
+                <div class="item">
+                    <%= image_tag("f4.jpg", :alt => "9") %>
+                </div>
+                <div class="item">
+                    <%= image_tag("f5.jpg", :alt => "10") %>
+                </div>
+                <div class="item">
+                    <%= image_tag("f6.jpg", :alt => "11") %>
+                </div>
+                <div class="item">
+                    <%= image_tag("f7.jpg", :alt => "12") %>
+                </div>
+                <div class="item">
+                    <%= image_tag("f8.jpg", :alt => "13") %>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="row">
+            <p>
+                <div class="col-md-4">รายละเอียด</div>
+                <div class="col-md-8">
+                    <section>
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">ข่าวประกาศ</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="contentBoxNews">
+                                    <ul>
+                                        <h5><li><p style="color:black;"><strong><a href="..">ลงทะเบียนหอพัก
+                                        </a></strong></p>
+                                        <div style="display: none" id="__hggasdgjhsagd_once">&nbsp;</div>[7 มี.ค. 2559] </li>
+                                    </h5>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </p>
+    </div>        
+</div>
+</section>
